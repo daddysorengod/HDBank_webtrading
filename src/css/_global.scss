@@ -1,0 +1,206 @@
+body {
+    font-family: "SVN-Gilroy", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    color: $secondary;
+    letter-spacing: -1%;
+}
+
+.text-title {
+    @include text-title;
+}
+
+.vpb-status-label {
+    display: flex;
+    align-items: center;
+    gap: 0 5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    width: fit-content;
+
+    &--text {
+        font-size: 12px;
+        font-weight: 700;
+        line-height: calc(16 / 12);
+    }
+
+    &--waiting {
+        background-color: #fff7cf;
+        color: #ffb80b;
+    }
+
+    &--reject {
+        background-color: #ffe2df;
+        color: $negative;
+    }
+
+    &--approved {
+        background-color: #ceffde;
+        color: $primary;
+    }
+
+    &--shared {
+        background-color: #d1e7ff;
+        color: #00a3ff;
+    }
+
+    &--closed {
+        background-color: #ceffde;
+        color: #00b74f;
+    }
+}
+
+.vpb {
+    &-title-in-form {
+        @include title-in-form;
+    }
+}
+
+.mb-27 {
+    margin-bottom: 27px !important;
+}
+
+.vpb-file-errors {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba($negative, 0.2);
+    margin-bottom: 20px;
+}
+
+.my-sticky-header-table {
+    height: 310px;
+
+    .q-table__top,
+    .q-table__bottom,
+    thead tr:first-child th {
+        background-color: #f4f4f4;
+    }
+
+    thead tr th {
+        position: sticky;
+        z-index: 1;
+    }
+
+    thead tr:first-child th {
+        top: 0;
+    }
+
+    &.q-table--loading thead tr:last-child th {
+        top: 48px;
+    }
+}
+
+.vpb-getActiveCode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.vpb-getActiveCodeLabel {
+    padding: 25px 15% 0px 15%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #33383f;
+}
+
+.vpb-notifyContainer {
+    // padding: 12px 16px 12px 16px;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    color: #33383f;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.vpb-notifyContent:hover {
+    background-color: #e2e6ea;
+    opacity: 0.7;
+}
+
+.vpb-notifyTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    // display: block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: start;
+    // border: 1px solid #ccc;
+}
+.vpb-dateContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.vpb-dateLabel {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.6px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+}
+
+.vpb-stickyTitle {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #ffffff;
+}
+
+.vpb-getActiveCodeText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.9736px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+}
+
+.vpb-baseModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.vpb-baseModalLabel {
+    padding: 25px 20px 25px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #33383f;
+}
+
+.vpb-baseModalText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.9736px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+}
+
+.vpb-OtpInput {
+    padding: 0px 10% 0px 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #33383f;
+}
+
+.vpb-OtpLabel {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.9736px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+}

@@ -1,0 +1,33 @@
+.header {
+    &-menu {
+        margin-left: 48px;
+        margin-top: 4px;
+        overflow-y: scroll;
+        padding: 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &-menu-fa {
+        margin-top: 4px;
+        overflow-y: scroll;
+        padding: 0;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &-page-title {
+        background: linear-gradient(90deg, #1d4289 0%, #00b74f 66.15%);
+
+        &--text {
+            display: inline-block;
+            margin-left: 14px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: calc(32 / 20);
+            letter-spacing: -2%;
+        }
+    }
+}

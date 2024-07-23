@@ -1,0 +1,31 @@
+.vpb-form {
+    &-group {
+        margin-bottom: 16px;
+
+        &__bottom {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.vpb-filter {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+
+    &-group {
+        width: 219px;
+    }
+
+    &-group--btn {
+        //width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px 16px;
+    }
+}
+.vpb-note {
+    margin-top: 24px;
+}

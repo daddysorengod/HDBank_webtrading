@@ -1,0 +1,28 @@
+@mixin text-title {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: calc(24 / 15);
+    letter-spacing: -1%;
+}
+
+@mixin text-dark-gray {
+    color: $dark-gray;
+}
+
+@mixin text-negative {
+    color: $negative;
+}
+
+@mixin title-in-form {
+    @include text-title;
+    color: $primary;
+    margin-bottom: 12px;
+}
+
+@mixin text($fz, $fw, $lh, $color) {
+    font-size: #{$fz}px;
+    font-weight: $fw;
+    line-height: calc(#{$lh/$fz});
+    letter-spacing: -1%;
+    color: $color;
+}

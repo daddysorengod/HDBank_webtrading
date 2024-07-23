@@ -1,0 +1,36 @@
+.vpb-role {
+    &--choose-title {
+        @include title-in-form;
+    }
+
+    &--list {
+        margin-top: 24px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        padding: 12px;
+
+        &__title {
+            @include text-title;
+            color: $dark-gray;
+            padding: 0 0 12px !important;
+        }
+    }
+
+    &--item {
+        padding: 12px !important;
+        background-color: #fff;
+        border-radius: 8px !important;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &-user-label {
+        @include text(14, 600, 20, $dark-gray);
+    }
+
+    &-user-value {
+        @include text(14, 700, 20, $secondary);
+    }
+}
